@@ -41,7 +41,7 @@ export default defineConfig(({ mode }) => {
                 instances: [{ browser: 'chromium' }],
             },
         },
-        base: './',
+        base: '/monochrome_SKR/',
         define: {
             __COMMIT_HASH__: JSON.stringify(commitHash),
             __VITEST__: !!process.env.VITEST,
