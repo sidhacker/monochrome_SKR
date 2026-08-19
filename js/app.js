@@ -674,7 +674,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             try {
                 /** @type {import("./metadata.js")} */
                 const { readTrackMetadata } = await loadMetadataModule();
-                const baseName = filename.split('/').pop();
+                const baseName = filename.split('/monochrome_SKR/').pop();
                 const metadata = await readTrackMetadata(new Uint8Array(await blob.arrayBuffer()), {
                     filename: baseName,
                 });
